@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>channel-bts</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        *{
+            font-family: 'Pretendard-Regular'
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .f2 {
+            display: flex;
+        }
+
+        .container {
+            position: fixed;
+            left: 210px;
+            top: 65px;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .left {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 60px;
+            width: 200px;
+            margin-left: 5px;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        .logotext{
+            font-weight: 900;
+            margin-top: 3px;
+        }
+
+        .menu {
+            transition: all 0.2s;
+        }
+
+        .search {
+            padding: 7px;
+            padding-left: 15px;
+            width: 500px;
+            text-align: left;
+            color: gray;
+            background-color: lightgray;
+            border: black 1px solid;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        .filter {
+            filter: invert(100%);
+            border-radius: 50px;
+            border: white 1px solid;
+        }
+
+        .login {
+            border: 1px black solid;
+            border-radius: 50px;
+            padding: 10px;
+            background-color: white;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .box {
+            width: 80%;
+            background-color: darkgray;
+            padding: 10px;
+            padding-right: 5%;
+            color: white;
+            border-radius: 10px;
+            transition: 0.2s all ease;
+            margin: 5px;
+            margin-left: 0;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: lightgray;
+            color: gray;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .side {
+            transition: all 0.2s;
+        }
+
+        .line {
+            width: 90%;
+            margin: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            border: 1px solid gray;
+        }
+
+        iframe{
+            width: 380px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        .img{
+            width: 370px;
+            border: 5px solid rgb(132, 132, 132);
+            border-radius: 10px;
+            margin: 30px;
+            margin-left: 0;
+        }
+
+        .shopping{
+            margin: 15px;
+        }
+
+        .s-title{
+            font-size: 30px;
+            margin: 10px;
+            margin-left: 0;
+            font-weight: 600;
+        }
+
+        .button1{
+            background-color: darkgray;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: rgb(212, 212, 212);
+        }
+
+        .box:active {
+            background-color: lightgray;
+        }
+
+        .filter:hover {
+            filter: brightness(1.5);
+        }
+
+        .button1:hover{
+            background-color: rgb(237, 237, 237);
+            color: gray;
+        }
+
+        .button:hover{
+            background-color: rgb(237, 237, 237);
+        }
+
+        .login:active {
+            background-color: lightgray;
+        }
+
+        .menu:active+.side {
+            transform: translateX(-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="f2">
+            <div class="bold menu">☰</div>
+            <div class="bold logotext">&nbsp; idol_TUBE</div>
+        </div>
+        <div class="f2">
+            <input class="search d" type="text" placeholder="검색"></input>
+            <div><img src="./img/마이크.png" class="filter"></div>
+        </div>
+        <div class="login">👤 로그인</div>
+    </div>
+
+
+    <div class="left">
+        <div class="side">
+            <div class="box" onclick="window.location.href = '1project.html';">🏠 홈</div>
+            <div class="line"></div>
+            <div class="box">🎁 보관함</div>
+            <div class="box">🕑 시청 기록</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="f2">
+            <div class="button" onclick="window.location.href = '1project.html';">전체</div>
+            <div class="button" onclick="window.location.href = 'aespa.html';">AESPA</div>
+            <div class="button button1" onclick="window.location.href = 'bts.html';">BTS</div>
+            <div class="button" onclick="window.location.href = 'seventeen.html';">SEVENTEEN</div>
+            <div class="button" onclick="window.location.href = 'newjeans.html';">NEWJEANS</div>
+            <div class="button" onclick="window.location.href = 'txt.html';">TXT</div>
+            <div class="button" onclick="window.location.href = 'blackpink.html';">BLACKPINK</div>
+        </div>
+
+        <div>
+            <iframe src="https://www.youtube.com/embed/I7o0UoGLoRM?si=x7pFDLpuBxPxRZ26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Ho5NxYeVBk4?si=lzt_vDQlJS0pWx9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/a9YcSoVkUAg?si=k7vqwUYS_RMIEup1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GcVAMt5fRow?si=qcXFCFdi1Sy4ZK77" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ZLsomuEHDFM?si=jpdth0lqSQzsN5sR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9n-aYhf7ygk?si=ZjLWh9RT7aaRZCpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="shopping">
+            <div class="s-title">Shopping</div>
+            <a href="https://smartstore.naver.com/dhglobal/products/7523415107?NaPm=ct%3Dlmvpar54%7Cci%3D0ye0002vyeTz2i5t71m0%7Ctr%3Dpla%7Chk%3D93d70c7d33aa39d20903cd100e701454021e3c2d"><img src="./img/bts.jpeg" class="img"></a>
+            <a href="https://search.shopping.naver.com/catalog/35677408376?cat_id=50000234&frm=NVSCPRO&query=%EB%B0%A9%ED%83%84+skool+luv+affair+%EC%95%A8%EB%B2%94&NaPm=ct%3Dlmvpd38w%7Cci%3D0b79a00eb2bde79c160087883cc11efaae498a54%7Ctr%3Dsls%7Csn%3D95694%7Chk%3Dd731fd443d8ad61a63cb0b43f4b4d939f3e484d9"><img src="./img/bts album.jpeg" class="img"></a>
+            <a href="https://search.shopping.naver.com/catalog/36222952752?cat_id=50000234&frm=NVSCPRO&query=%EB%B0%A9%ED%83%84+skool+luv+affair+%EC%95%A8%EB%B2%94&NaPm=ct%3Dlmvpdlrk%7Cci%3Debed9d0c854b062d560b0288570d5945a63908f1%7Ctr%3Dsls%7Csn%3D95694%7Chk%3D89a82f8dd0adedb75b5e8ecf91a2d887c6b900c7"><img src="./img/bts album2.jpeg" class="img"></a>
+        </div>
+    </div>
+</body>
+</html>

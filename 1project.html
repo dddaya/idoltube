@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idol_TUBE</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        *{
+            font-family: 'Pretendard-Regular'
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .f2 {
+            display: flex;
+        }
+
+        .container {
+            position: fixed;
+            left: 210px;
+            top: 65px;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .left {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 60px;
+            width: 200px;
+            margin-left: 5px;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        .logotext{
+            font-weight: 900;
+            margin-top: 3px;
+        }
+
+        .menu {
+            transition: all 0.2s;
+        }
+
+        .search {
+            padding: 7px;
+            padding-left: 15px;
+            width: 500px;
+            text-align: left;
+            color: gray;
+            background-color: lightgray;
+            border: black 1px solid;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        .filter {
+            filter: invert(100%);
+            border-radius: 50px;
+            border: white 1px solid;
+        }
+
+        .login {
+            border: 1px black solid;
+            border-radius: 50px;
+            padding: 10px;
+            background-color: white;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .box {
+            width: 80%;
+            background-color: darkgray;
+            padding: 10px;
+            padding-right: 5%;
+            color: white;
+            border-radius: 10px;
+            transition: 0.2s all ease;
+            margin: 5px;
+            margin-left: 0;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: lightgray;
+            color: gray;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .side {
+            transition: all 0.2s;
+        }
+
+        .line {
+            width: 90%;
+            margin: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            border: 1px solid gray;
+        }
+
+        iframe{
+            width: 380px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        .button1{
+            background-color: darkgray;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: rgb(212, 212, 212);
+        }
+
+        .box:active {
+            background-color: lightgray;
+        }
+
+        .filter:hover {
+            filter: brightness(1.5);
+        }
+
+        .button1:hover{
+            background-color: rgb(237, 237, 237);
+            color: gray;
+        }
+
+        .button:hover{
+            background-color: rgb(237, 237, 237);
+        }
+
+        .login:active {
+            background-color: lightgray;
+        }
+
+        .menu:active+.side {
+            transform: translateX(-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="f2">
+            <div class="bold menu">☰</div>
+            <div class="bold logotext">&nbsp; idol_TUBE</div>
+        </div>
+        <div class="f2">
+            <input class="search d" type="text" placeholder="검색"></input>
+            <div><img src="./img/마이크.png" class="filter"></div>
+        </div>
+        <div class="login">👤 로그인</div>
+    </div>
+
+
+    <div class="left">
+        <div class="side">
+            <div class="box" onclick="window.location.href = '1project.html';">🏠 홈</div>
+            <div class="line"></div>
+            <div class="box">🎁 보관함</div>
+            <div class="box">🕑 시청 기록</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="f2">
+            <div class="button button1" onclick="window.location.href = '1project.html';">전체</div>
+            <div class="button" onclick="window.location.href = 'aespa.html';">AESPA</div>
+            <div class="button" onclick="window.location.href = 'bts.html';">BTS</div>
+            <div class="button" onclick="window.location.href = 'seventeen.html';">SEVENTEEN</div>
+            <div class="button" onclick="window.location.href = 'newjeans.html';">NEWJEANS</div>
+            <div class="button" onclick="window.location.href = 'txt.html';">TXT</div>
+            <div class="button" onclick="window.location.href = 'blackpink.html';">BLACKPINK</div>
+        </div>
+
+        <div>
+            <iframe src="https://www.youtube.com/embed/I7o0UoGLoRM?si=x7pFDLpuBxPxRZ26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/-RmORz4NG0k?si=NO-n1A5KKmgm-AlZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/-GQg25oP0S4?si=v3ohRlPBlt5ViEOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/yQUU29NwNF4?si=DtOPa4s5imSrc0xW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/kcelgrGY1h8?si=W9uE1PQvF1rYDJ7C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/XymH8tRxOcs?si=YzqDs5Ytw7PEeiTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jOTfBlKSQYY?si=K_4JEA9tvV5q9JQn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/POe9SOEKotk?si=F80oifOVzJxZSCkJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/J-wFp43XOrA?si=A9nqEL0icujHv--k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Ho5NxYeVBk4?si=lzt_vDQlJS0pWx9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/O04cUQPephY?si=PqxGcGETl9JOn3iZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/aSL_I6apPcM?si=eI9PHCd65HSSF79V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GgU-q_KTiKY?si=lydQB4M3D8p8QJPF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/MDfqNPLXvbI?si=JvpUs26alFUSyQeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4fikvcuirtY?si=CcAyrls6bXjnqpYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FsvzDcfvCW0?si=IX6QKpMgpSVLkLj_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/a9YcSoVkUAg?si=k7vqwUYS_RMIEup1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/u-pYzdXXkr4?si=hvLXJQEr_PACYVH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/O04cUQPephY?si=PqxGcGETl9JOn3iZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/_wPXBMan_u4?si=RXObhmgXZ8EYdjKy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GcVAMt5fRow?si=qcXFCFdi1Sy4ZK77" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ENffRqSx7ok?si=uPBAWaecluWtw_pB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/_H1ilQy12uE?si=fhDfP-jY6x5xJJB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/7HDfVbGZRms?si=C5VfCKUwAURSfouU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>channel-aespa</title>
+    <style>
+         @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        *{
+            font-family: 'Pretendard-Regular'
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .f2 {
+            display: flex;
+        }
+
+        .container {
+            position: fixed;
+            left: 210px;
+            top: 65px;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .left {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 60px;
+            width: 200px;
+            margin-left: 5px;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        .logotext{
+            font-weight: 900;
+            margin-top: 3px;
+        }
+
+        .menu {
+            transition: all 0.2s;
+        }
+
+        .search {
+            padding: 7px;
+            padding-left: 15px;
+            width: 500px;
+            text-align: left;
+            color: gray;
+            background-color: lightgray;
+            border: black 1px solid;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        .filter {
+            filter: invert(100%);
+            border-radius: 50px;
+            border: white 1px solid;
+        }
+
+        .login {
+            border: 1px black solid;
+            border-radius: 50px;
+            padding: 10px;
+            background-color: white;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .box {
+            width: 80%;
+            background-color: darkgray;
+            padding: 10px;
+            padding-right: 5%;
+            color: white;
+            border-radius: 10px;
+            transition: 0.2s all ease;
+            margin: 5px;
+            margin-left: 0;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: lightgray;
+            color: gray;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .button1{
+            background-color: darkgray;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.2s all ease;
+            cursor: pointer;
+        }
+
+        .side {
+            transition: all 0.2s;
+        }
+
+        .line {
+            width: 90%;
+            margin: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            border: 1px solid gray;
+        }
+
+        iframe{
+            width: 380px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        .img{
+            width: 370px;
+            border: 5px solid rgb(132, 132, 132);
+            border-radius: 10px;
+            margin: 30px;
+            margin-left: 0;
+        }
+
+        .shopping{
+            margin: 15px;
+        }
+
+        .s-title{
+            font-size: 30px;
+            margin: 10px;
+            margin-left: 0;
+            font-weight: 600;
+        }
+
+        .box:hover {
+            background-color: rgb(212, 212, 212);
+        }
+
+        .box:active {
+            background-color: lightgray;
+        }
+
+        .filter:hover {
+            filter: brightness(1.5);
+        }
+
+        .button1:hover{
+            background-color: rgb(237, 237, 237);
+            color: gray;
+        }
+        
+        .button:hover{
+            background-color: rgb(237, 237, 237);
+        }
+
+        .login:active {
+            background-color: lightgray;
+        }
+
+        .menu:active+.side {
+            transform: translateX(-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="f2">
+            <div class="bold menu">☰</div>
+            <div class="bold logotext">&nbsp; idol_TUBE</div>
+        </div>
+        <div class="f2">
+            <input class="search d" type="text" placeholder="검색"></input>
+            <div><img src="./img/마이크.png" class="filter"></div>
+        </div>
+        <div class="login">👤 로그인</div>
+    </div>
+
+
+    <div class="left">
+        <div class="side">
+            <div class="box" onclick="window.location.href = '1project.html';">🏠 홈</div>
+            <div class="line"></div>
+            <div class="box">🎁 보관함</div>
+            <div class="box">🕑 시청 기록</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="f2">
+            <div class="button" onclick="window.location.href = '1project.html';">전체</div>
+            <div class="button button1" onclick="window.location.href = 'aespa.html';">AESPA</div>
+            <div class="button" onclick="window.location.href = 'bts.html';">BTS</div>
+            <div class="button" onclick="window.location.href = 'seventeen.html';">SEVENTEEN</div>
+            <div class="button" onclick="window.location.href = 'newjeans.html';">NEWJEANS</div>
+            <div class="button" onclick="window.location.href = 'txt.html';">TXT</div>
+            <div class="button" onclick="window.location.href = 'blackpink.html';">BLACKPINK</div>
+        </div>
+
+        <div>
+            <iframe src="https://www.youtube.com/embed/yQUU29NwNF4?si=DtOPa4s5imSrc0xW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/aSL_I6apPcM?si=eI9PHCd65HSSF79V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FsvzDcfvCW0?si=IX6QKpMgpSVLkLj_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/7HDfVbGZRms?si=C5VfCKUwAURSfouU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/gl5pbTpqGD0?si=P9xR8DrJAjullZ6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hL1tP0_y00U?si=1HWtklC6UkDy8deP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>  
+
+        <div class="shopping">
+            <div class="s-title">Shopping</div>
+            <a href="https://smartstore.naver.com/ganghee/products/8571051389?n_media=27758&n_query=%EC%97%90%EC%8A%A4%ED%8C%8C%EC%9D%91%EC%9B%90%EB%B4%89&n_rank=1&n_ad_group=grp-a001-02-000000034925688&n_ad=nad-a001-02-000000246274827&n_campaign_type=2&n_mall_id=ncp_1o36vs_01&n_mall_pid=8571051389&n_ad_group_type=2&n_match=3&NaPm=ct%3Dlmvoynyg%7Cci%3D0zq0001HxKTzAQsSKf19%7Ctr%3Dpla%7Chk%3D17565732a6a2832d46df733be96868085fb7a5fd"><img src="./img/aespa.jpeg" class="img"></a>
+            <a href="https://smartstore.naver.com/idolsale/products/8735212814?NaPm=ct%3Dlmvp91ew%7Cci%3D098bec7faa9b2d6dbc78aac10584e5780a646b2d%7Ctr%3Dsls%7Csn%3D667094%7Chk%3Db1592fd3ea7b96db24e20e518830d2faba48111b"><img src="./img/aespa album.jpeg" class="img"></a>
+            <a href="https://smartstore.naver.com/_mysound/products/9106512040?NaPm=ct%3Dlmvp7lps%7Cci%3Da4715bb79fab6cca123824f485043b103a8736fd%7Ctr%3Dsls%7Csn%3D8071785%7Chk%3Dff1136b3b9a378e3eacb59485be972a09b9f2f68"><img src="./img/aespa album2.jpeg" class="img"></a>
+        </div>
+    </div>
+</body>
+</html>
